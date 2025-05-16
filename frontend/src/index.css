@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply  bg-one h-screen text-white ;
+  }
+  
+  h1 {
+    @apply text-xl font-bold text-five;
+  }
+  h2 {
+    @apply text-lg font-semibold text-five;
+  }
+}
+@theme {
+  --color-one: #0D1321;
+  --color-two: #1D2D44;
+  --color-three: #3E5C76;
+  --color-four: #748CAB;
+  --color-five: #F0EBD8;
+  
+}
+
+
+
+@layer components {
+  .card {
+          @apply p-4 bg-five border-2 border-pink-400 rounded-lg text-2xl font-bold 
+          text-black w-[200px] flex items-center justify-center; 
+        }
+
+  .btn {
+    @apply  hover:bg-one  rounded-3xl  font-semibold 
+    text-five px-8 py-1  text-2xl flex items-center justify-center;
+  }
+}
+
+/* .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+} */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
