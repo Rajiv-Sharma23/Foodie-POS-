@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 
 const OrderList = () => {
   return (
-    <div className="flex my-1 gap-4  p-2 rounded-2xl">
+    <div className="flex my-1 gap-4  p-2 rounded-2xl hover:cursor-pointer">
       <button className="bg-yellow-400 font-bold text-black p-1 text-2xl rounded-lg">
         RS
       </button>

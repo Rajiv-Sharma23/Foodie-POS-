@@ -5,6 +5,7 @@ import MiniCard from "../components/home/MIniCard.jsx";
 import { GiProgression } from "react-icons/gi";
 import { TbCoinRupee } from "react-icons/tb";
 import RecentOrders from "../components/home/RecentOrders.jsx";
+import PopularDishes from "../components/home/PopularDishes.jsx";
 
 const Home = () => {
   return (
@@ -36,7 +37,9 @@ const Home = () => {
         </div>
         {/* right section */}
 
-        <div className="flex-[2] bg-two   p-4 rounded-3xl mt-4 mr-4"></div>
+        <div className="flex-[2]  ">
+          <PopularDishes/>
+        </div>
       </section>
       <BottomNav />
     </>
