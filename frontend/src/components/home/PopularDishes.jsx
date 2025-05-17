@@ -3,8 +3,8 @@ import { popularDishes } from "../../constants/constants";
 
 const PopularDishes = () => {
   return (
-    <div className="mt-4 mr-4">
-      <div className="bg-two w-full rounded-2xl hover:cursor-pointer">
+    <div className="my-2 mr-4">
+      <div className="card2">
         {/* Header */}
         <div className="flex justify-between items-center p-4">
           <h2>Popular Dishes</h2>
@@ -18,7 +18,7 @@ const PopularDishes = () => {
           {popularDishes.map((dish, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 bg-one rounded-xl px-4 p-2  m-3"
+              className="card1"
             >
                 <h1>{ index < `9` ? `0${index + 1}` : index + 1 }</h1>
               <img
@@ -27,8 +27,8 @@ const PopularDishes = () => {
                 className="w-12 h-12 object-cover rounded-xl"
               />
               <div className="flex flex-col gap-1">
-                <h2 className="text-lg font-semibold">{dish.name}</h2>
-                <p className="text-sm text-gray-400">{dish.numberOfOrders} <span className="text-white">orders</span></p>
+                <h2 >{dish.name}</h2>
+                <p>{dish.numberOfOrders} <span className="text-white">orders</span></p>
               </div>
             </div>
           ))}

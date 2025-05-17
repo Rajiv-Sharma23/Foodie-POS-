@@ -2,9 +2,9 @@
 
 @layer base {
   body {
-    @apply  bg-one h-screen text-white ;
+    @apply bg-one h-screen text-white;
   }
-  
+
   h1 {
     @apply text-xl font-bold text-five;
   }
@@ -13,27 +13,41 @@
   }
 }
 @theme {
-  --color-one: #0D1321;
-  --color-two: #1D2D44;
-  --color-three: #3E5C76;
-  --color-four: #748CAB;
-  --color-five: #F0EBD8;
-  
+  --color-one: #0d1321;
+  --color-two: #1d2d44;
+  --color-three: #3e5c76;
+  --color-four: #748cab;
+  --color-five: #f0ebd8;
 }
-
-
 
 @layer components {
-  .card {
-          @apply p-4 bg-five border-2 border-pink-400 rounded-lg text-2xl font-bold 
-          text-black w-[200px] flex items-center justify-center; 
-        }
+  .card1{
+    @apply flex items-center gap-6 bg-one rounded-xl px-4 p-2  m-3;
 
-  .btn {
-    @apply  hover:bg-one  rounded-3xl  font-semibold 
-    text-five px-8 py-1  text-2xl flex items-center justify-center;
+    h2 {
+      @apply text-lg font-semibold text-orange-500;
+    }
+
+    p {
+      @apply text-sm font-semibold text-gray-400;
+    }
   }
+
+  .card2{
+    @apply bg-two w-full rounded-2xl hover:cursor-pointer;
+
+  }
+
+ .btn {
+  @apply  gap-2 flex text-2xl font-semibold hover:bg-one p-2 px-4 rounded-full hover:cursor-pointer;
+ }
+
+
+
+ 
 }
+
+
 
 /* .scrollbar-hide::-webkit-scrollbar {
   display: none;
