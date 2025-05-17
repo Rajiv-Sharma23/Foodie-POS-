@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import { IoMdNotifications } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [dateTime, setDateTime] = useState(new Date());
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => setDateTime(new Date()), 1000);
@@ -14,7 +16,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center px-16 py-4 bg-two border-b-4 border-three text-white shadow-md">
       {/* Restaurant Name / Logo */}
-      <div className="text-2xl font-bold tracking-wide">🍽️ Foodie POS</div>
+      <div className="text-2xl font-bold tracking-wide cursor-pointer" onClick={() =>{ navigate("/") }}>🍽️ Foodie POS </div>
 
       <div className="flex items-center gap-2 rounded-md bg-four p-1 pl-2">
         {/* search */}

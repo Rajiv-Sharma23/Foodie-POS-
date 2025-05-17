@@ -10,7 +10,7 @@ import PopularDishes from "../components/home/PopularDishes.jsx";
 const Home = () => {
   return (
     <>
-      <section className="h-[calc(100vh-9rem)] overflow-auto flex gap-4 ">
+      <section className="bg-one h-[calc(100vh-7rem)] overflow-auto flex gap-4  ">
         {/* left section */}
 
         <div className="flex-[3] bg-one p-4 rounded-3xl  ml-4 ">
@@ -41,7 +41,7 @@ const Home = () => {
           <PopularDishes/>
         </div>
       </section>
-      <BottomNav />
+     
     </>
   );
 };

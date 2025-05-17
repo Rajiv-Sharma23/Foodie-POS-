@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-one h-screen text-white;
+    @apply  h-screen text-white;
   }
 
   h1 {
@@ -39,10 +39,15 @@
   }
 
  .btn {
-  @apply  gap-2 flex text-2xl font-semibold hover:bg-one p-2 px-4 rounded-full hover:cursor-pointer;
+  @apply  gap-2 flex text-2xl font-semibold bg-one p-2 px-4 rounded-full hover:cursor-pointer;
  }
 
-
+.btn2 {
+  @apply text-lg font-semibold  p-2 rounded-lg hover:cursor-pointer;
+}
+.btn22 {
+  @apply text-lg bg-orange-600 text-white font-semibold p-1 px-2 rounded-lg hover:cursor-pointer;
+}
 
  
 }
